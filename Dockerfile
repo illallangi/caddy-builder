@@ -2,9 +2,8 @@
 FROM docker.io/library/caddy:2.4.6-builder AS caddy
 
 RUN xcaddy build \
-    --with github.com/greenpau/caddy-security@v1.0.14 \
-    --with github.com/hairyhenderson/caddy-teapot-module@v0.0.3-0 \
-    --with github.com/mholt/caddy-webdav@master
+    --with github.com/greenpau/caddy-security@v1.1.2 \
+    --with github.com/hairyhenderson/caddy-teapot-module@v0.0.3-0
 
 ARG VCS_REF
 ARG VERSION
