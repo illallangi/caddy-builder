@@ -1,8 +1,8 @@
 # Build caddy
-FROM docker.io/library/caddy:2.4.6-builder AS caddy
+FROM docker.io/library/caddy:2.5.1-builder AS caddy
 
 RUN xcaddy build \
-    --with github.com/greenpau/caddy-security@v1.1.2 \
+    --with github.com/greenpau/caddy-security@v1.1.7 \
     --with github.com/hairyhenderson/caddy-teapot-module@v0.0.3-0
 
 ARG VCS_REF
