@@ -1,5 +1,5 @@
 # Build caddy
-FROM docker.io/library/caddy:2.5.1-builder AS caddy
+FROM docker.io/library/caddy:2.5.2-builder AS caddy
 
 RUN xcaddy build \
     --with github.com/greenpau/caddy-security@v1.1.7 \
